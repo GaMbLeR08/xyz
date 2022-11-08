@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background: #ef4a82;
+            margin: 0px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container-wrapper{
+            margin: 0.5em;
+            padding: 0em 3em;
+            width: 500px;
+            height: 555px;
+            background-color: #ef6e99;
+            border-radius: 17px;
+        }
+        form{
+            text-align: center;
+        }
+        label{
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .buttons{
+            border: 2px solid #bb003e;
+            width: 150px;
+            background-color: #bb003e;
+            border-radius: 20px;
+            font-size: 1.2em;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .buttons:hover{
+            cursor: pointer;
+            background-color: white;
+            border: 2px solid #ee3572;
+            color: #ee3572;
+        }
+        .Query * {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-wrapper">
+            <h2 style="text-align: center; text-decoration: underline;">Registration Form for Internship Courses</h2>
+            <form action="backend.php">
+            <div id="NAME">
+                <label for="name">Name:</label>
+                <input type="text" name="myname" id="name" placeholder="Enter Your Name" style="margin-left: 65px; width: 225px;">
+            </div>
+            <br>
+            <div>
+                <label for="prn">PRN:</label>
+                <input type="text" name="Myprn" id="PRN" placeholder="Enter Your PRN" style="margin-left: 70px; width: 225px;">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="MyEmail" id="email" placeholder="Enter Your Email id" style="margin-left: 63px; width: 225px;">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone number:</label>
+                <input type="number" name="MyPhone" id="phone" placeholder="Enter Your Phone no." style="margin-left: 3px;width: 225px;">
+            </div>
+            <br>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="MyAge" id="age" placeholder="Enter Your Age" style="margin-left: 77px; width: 223px;">
+            </div>
+            <br>
+            <div>
+                <label for="gender" style="margin-right: 50px;margin-left: -50px;">Gender:</label>
+                <input type="radio" name="MyGender" id="gender">Male
+                <input type="radio" name="MyGender" id="gender">Female
+                <input type="radio" name="MyGender" id="gender">Other
+            </div>
+            <br>
+            <div>
+                <label for="year" style="margin-right: 4px;">Year:</label>
+                <select name="MyYear" id="year" style="margin-left: 70px; width: 230px;">
+                    <option value="FE">FE</option>
+                    <option value="FE">SE</option>
+                    <option value="FE">TE</option>
+                    <option value="FE">BE</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="branch" style="margin-right: 4px;">Branch:</label>
+                <select name="MyBranch" id="branch" style="margin-left: 52px; width: 230px;">
+                    <option value="CE">Computer Engineering</option>
+                    <option value="IT">Information Tevhnology</option>
+                    <option value="Extc">Electronics and Telecommunication</option>
+                    <option value="ECS">Electronics Computer Science</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="PPT">PPT</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="division" style="margin-right: 14px;">Div:</label>
+                <select name="MyDiv" id="division" style="margin-left: 66px; width: 230px;">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="date" style="margin-right: 9px;">Date:</label>
+                <input type="date" name="MyDate" id="date" style="margin-left: 60px; width: 225px;">
+            </div>
+            <br>
+            <div class="Query">
+                <label for="area">Any queries:</label>
+                <textarea name="Queries" id="area" cols="29" rows="3" placeholder="Ask if any doubts" style="margin-left: 15px;"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit Now" class="buttons">
+                <input type="reset" value="Reset Now" class="buttons" style="margin-left: 20px;">
+            </div>
+            <br>
+           
+            </form>
+    </div>
+    </div>
+</body>
+</html>
