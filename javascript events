@@ -1,0 +1,113 @@
+OnClick Event
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+</head>
+<body >
+<h2>OnClick Event</h2>
+<input type="submit" value="Click to see the text"
+onclick="myfunction1()">
+</body>
+<script>
+function myfunction1()
+{
+document.write("Working with OnClick");
+}
+</script>
+</html>
+
+onsubmit event
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+</head>
+<body >
+<h2>OnSubmit Event</h2>
+<Form onsubmit="myfunction()">
+Name:<input type="text" id="">
+<input type="submit" value="Click" >
+</Form>
+</body>
+<script>
+function myfunction()
+{
+alert("Name Append in form");
+}
+</script>
+</html>
+
+onfocus event
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+</head>
+<body >
+<h2>OnFocus Event</h2>
+<h3 onfocus="myfunction3()" id="focus">Hello SIES GST</h3>
+<input type="text" name="" id="focuss" onfocus="myfunction3()">
+</body>
+<script>
+function myfunction3()
+{
+document.getElementById("focus").style.color="aqua";
+document.getElementById("focuss").style.backgroundColor="pink";
+}
+</script>
+</html>
+
+mouseover event
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+</head>
+<body >
+<h2>MouseOverEvent</h2>
+<p onmouseover="myfunction2()">CR7 is Greatest Of All Time</p>
+</body>
+<script>
+function myfunction2()
+{
+alert("Using Mouse Over Event");
+}
+</script>
+</html>
+
+
+Onmouseleave event
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+</head>
+<body >
+<h2>OnMouseLeave Event</h2>
+<p id="mouseout" onmouseleave="myfunction4()">on mouseleave change the
+color</p>
+</body>
+<script>
+function myfunction4()
+{
+document.getElementById("mouseout").style.color="green";
+}
+</script>
+</html>
