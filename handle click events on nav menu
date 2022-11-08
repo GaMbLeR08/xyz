@@ -1,0 +1,95 @@
+home.js
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+function Home ()  {
+    return (
+        <div>
+    <nav>
+        <ul>
+            <li>
+                <Link to="/">Home</Link>
+                </li> 
+            <li><Link to="/About">About</Link>
+            </li>
+        </ul>
+        </nav>
+    </div>
+
+    );
+
+  }
+ 
+  export default Home;
+
+
+app.js
+import './App.css';
+
+// import Function from './components/Function';
+// import ClassComponent from './components/ClassComponent';
+// import Counter from './MyComponents/Counter';
+import { BrowserRouter as Router , Route , Routes } from 'react-router-dom';
+import Home from './MyComponents/Home';
+import About from './MyComponents/About';
+// import { Component } from 'react';
+function App ()
+{
+  return (
+    <div className="App">
+      {/* s<Function /> */}
+      {/* <ClassComponent /> */}
+      {/* <Counter /> */}
+      <Router>
+      <Routes>
+      {/* <Route path="/" element={<div><h1>Home Page</h1></div>}/> */}
+      <Route path='/' element={<Home></Home>}></Route>
+      <Route path='/About' element={<About></About>}></Route>
+     
+
+           </Routes>
+           </Router>
+    </div>
+  );
+  }
+export default App;
+
+
+about.js
+import React from "react";
+import { Link } from "react-router-dom";
+function About ()  {
+    return (
+        <div>
+
+                <h1>this is abouts</h1>
+    </div>
+
+    );
+
+  }
+ 
+  export default About;
+
+
+router.js
+import React from 'react'
+import { Link } from 'react-router-dom';
+import App from '../App';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
+import About from './About';
+function Router() {
+    return(
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/about" element={<About />}/>
+           
+        </Routes>
+        </BrowserRouter>
+    )
+}
+export default Router;
