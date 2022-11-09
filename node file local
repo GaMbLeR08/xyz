@@ -1,0 +1,20 @@
+const fs = require('fs');
+const path = require('path');
+const filepath = 'Smaple.txt';
+
+fs.writeFileSync(filepath,'Sneha Baital');
+
+fs.readFile(filepath,'utf-8',(err,item)=>
+{
+        console.log(item); 
+})
+
+fs.appendFile(filepath, "  Chirag Gupta" ,(err)=>
+{
+    console.log("Appended SuCCEsfulyy");
+})
+
+fs.rename(filepath,'Sneha.txt',(err)=>
+{
+    console.log("renamed")
+})
